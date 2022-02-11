@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Temperature</title>
+    <style>
+        body {
+            background: url("images/bg-image.jpg") no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="search-container">
+                <input type="text" id="city-name" class="search-box" placeholder="Enter a City Name">
+                <button type="button" class="search-btn" onclick="searchTemperature()">Search</button>
+            </div>
+        </form>
+        <!-- display data -->
+        <div class="weather-status">
+            <div>
+                <div class="country-container">
+                    <h1 id="city">Dhaka </span></h1>
+                    <p id="country-name">BD</p>
+                </div>
+                <h3><span id="temperature">38.06</span>&deg;C</h3>
+                <img src="https://openweathermap.org/img/wn/02d@2x.png" id="weather-icon" alt="">
+                <h3 id="condition">Clouds</h3>
+                <hr>
+                <h3>Coldest: <span id="coldest">22.95</span></h3>
+                <h3>Warmest: <span id="warmest">23.83</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
